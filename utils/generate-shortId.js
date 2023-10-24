@@ -1,4 +1,4 @@
-module.exports = function generateShortId(length) {
+const generateShortId = length => {
   let randomString = ''
   const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
   for (let i = 0; i < length; i++) {
@@ -7,3 +7,5 @@ module.exports = function generateShortId(length) {
   }
   return randomString
 }
+
+module.exports = generateShortId
